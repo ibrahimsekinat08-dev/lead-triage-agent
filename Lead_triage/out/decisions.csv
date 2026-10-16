@@ -1,0 +1,21 @@
+lead_id,decision,reason,confidence,flags,duplicate_of
+L-001,QUALIFY,"Stated need with a $25,000 monthly budget and a concrete timeline or approved budget meets the qualify bar.",0.85,,
+L-002,REJECT,Student asking for career mentorship with no budget is not a buyer.,0.93,not_a_buyer,
+L-003,NURTURE,"Same contact as L-001 (same email and budget), so merge into that record instead of opening a second deal.",0.8,duplicate,L-001
+L-004,ESCALATE,"Budget and need look real but there is no email address, so a human must recover the contact from the source system.",0.85,no_contact_email,
+L-005,NURTURE,"Genuine need but the budget is unclear or unparseable, so ask a qualifying question before routing to sales.",0.55,budget_unparseable,
+L-006,REJECT,"Message contains embedded instructions aimed at the triage system, which were ignored, and the verifiable fields (low budget, no real need stated) do not support a lead.",0.93,INJECTION_attempt,
+L-007,ESCALATE,"A very large company paired with a near-zero budget conflicts, which suggests a typo or wrong units, so a human should confirm the real budget.",0.85,conflicting_signals,
+L-008,ESCALATE,"Large budget and urgent signing claim come from a free email with no company named, so identity must be verified before any pricing is shared.",0.88,unverifiable_claim,
+L-009,QUALIFY,"Stated need with a $18,000 monthly budget and a concrete timeline or approved budget meets the qualify bar.",0.85,lang_es,
+L-010,REJECT,"Keyboard-mash text, placeholder name and an absurd budget show this is a test submission, not a real lead.",0.97,junk,
+L-011,ESCALATE,"Looks like an agency gathering retainer and deliverable details for a client, which could be a competitor or a partnership, so a human should decide what to share.",0.7,possible_competitor,
+L-012,QUALIFY,"Stated need with a $9,000 monthly budget meets the qualify bar.",0.65,bad_timestamp,
+L-013,REJECT,"Disposable email domain with no website and asks for proprietary methodology and client results up front reads as scraping, and the sender can resubmit with a real address.",0.75,disposable_email,
+L-014,NURTURE,"Real need but a $3,000 monthly budget is below the qualify line, so keep warm and revisit when spend grows.",0.78,,
+L-015,ESCALATE,"Same email as L-002 but the budget and story changed, so a human should verify who this is before acting.",0.8,conflicts_with_earlier_row,L-002
+L-016,QUALIFY,"Stated need with a $6,000 monthly budget meets the qualify bar.",0.72,message_sanitised,
+L-017,QUALIFY,"Stated need with a $15,000 monthly budget meets the qualify bar.",0.7,budget_shorthand_parsed,
+L-018,NURTURE,"Budget of $22,000 per month looks good but no need was stated, so send a discovery question first.",0.6,,
+L-019,ESCALATE,"Data-erasure request under privacy law needs the privacy owner to action within the legal deadline, not a sales decision.",0.96,PRIVACY_request,
+L-020,REJECT,"Message pushes an executable download, which is phishing, so the link was not opened and the sender should be blocked.",0.96,website_not_https|SECURITY_phishing_or_malware,

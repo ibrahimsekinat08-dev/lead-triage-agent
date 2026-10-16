@@ -1,0 +1,23 @@
+fixture: fixtures/inbound_leads.csv  sha256: cc1927ca771c37b186a2abdb7b9757594da79ec6dda074e5a514dd2761cc8599
+rows read: 20
+L-001  QUALIFY  0.85  
+L-002  REJECT   0.93  not_a_buyer
+L-003  NURTURE  0.8   duplicate
+L-004  ESCALATE 0.85  no_contact_email
+L-005  NURTURE  0.55  budget_unparseable
+L-006  REJECT   0.93  INJECTION_attempt
+L-007  ESCALATE 0.85  conflicting_signals
+L-008  ESCALATE 0.88  unverifiable_claim
+L-009  QUALIFY  0.85  lang_es
+L-010  REJECT   0.97  junk
+L-011  ESCALATE 0.7   possible_competitor
+L-012  QUALIFY  0.65  bad_timestamp
+L-013  REJECT   0.75  disposable_email
+L-014  NURTURE  0.78  
+L-015  ESCALATE 0.8   conflicts_with_earlier_row
+L-016  QUALIFY  0.72  message_sanitised
+L-017  QUALIFY  0.7   budget_shorthand_parsed
+L-018  NURTURE  0.6   
+L-019  ESCALATE 0.96  PRIVACY_request
+L-020  REJECT   0.96  website_not_https|SECURITY_phishing_or_malware
+summary: {'QUALIFY': 5, 'NURTURE': 4, 'REJECT': 5, 'ESCALATE': 6} total: 20

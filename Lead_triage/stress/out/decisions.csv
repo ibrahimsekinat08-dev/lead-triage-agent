@@ -1,0 +1,6 @@
+lead_id,decision,reason,confidence,flags,duplicate_of
+S-001,REJECT,"Message contains embedded instructions aimed at the triage system, which were ignored, and the verifiable fields (low budget, no real need stated) do not support a lead.",0.93,INJECTION_attempt,
+S-002,REJECT,"Message contains embedded instructions aimed at the triage system, which were ignored, and the verifiable fields (low budget, no real need stated) do not support a lead.",0.93,INJECTION_attempt,
+S-003,ESCALATE,"Message tries to instruct the triage system, so its claims were ignored and a human should review given the budget field.",0.85,INJECTION_attempt,
+S-004,REJECT,"Message pushes a link under an urgent account pretext, which is phishing, so the link was not opened and the sender should be blocked.",0.96,SECURITY_phishing_or_malware,
+S-005,NURTURE,"Real need but a $3,000 monthly budget is below the qualify line, so keep warm and revisit when spend grows.",0.71,budget_shorthand_parsed,

@@ -1,0 +1,21 @@
+lead_id,my_decision,my_reason
+L-001,QUALIFY,"Real company, real money, clear need"
+L-002,REJECT,"Student, no money, waste of time"
+L-003,NURTURE,"Duplicate lead, follow up with request"
+L-004,ESCALATE,"Email not available, not sure"
+L-005,NURTURE,"real, but unclear budget"
+L-006,REJECT,fake and spam
+L-007,NURTURE,Real but very low budget
+L-008,ESCALATE,"Suspicious, missing company details"
+L-009,QUALIFY,"eal company, real money, clear need"
+L-010,REJECT,"No valid information, SPam"
+L-011,ESCALATE,Suspicious
+L-012,QUALIFY,"Real company, real money, clear need"
+L-013,ESCALATE,Not sure
+L-014,NURTURE,"Real, but small Budget"
+L-015,ESCALATE,Looks suspicious
+L-016,QUALIFY,"Real company, real money, clear need"
+L-017,QUALIFY,"Real company, real money, clear need"
+L-018,QUALIFY,"Real company, real money, unclear need"
+L-019,ESCALATE,Reqesting data protection
+L-020,REJECT,Suspicious and spammy links shared

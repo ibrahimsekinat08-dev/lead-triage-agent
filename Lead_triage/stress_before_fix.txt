@@ -1,0 +1,8 @@
+fixture: stress_leads.csv  sha256: 0edc3990cf5ccdad0eb1c761d2e3e94cccb4405e5b75aa161dd61a3981d56b8b
+rows read: 5
+S-001  REJECT   0.85  
+S-002  REJECT   0.85  
+S-003  QUALIFY  0.77  
+S-004  REJECT   0.96  SECURITY_phishing_or_malware
+S-005  NURTURE  0.71  budget_shorthand_parsed
+summary: {'QUALIFY': 1, 'NURTURE': 1, 'REJECT': 3, 'ESCALATE': 0} total: 5
