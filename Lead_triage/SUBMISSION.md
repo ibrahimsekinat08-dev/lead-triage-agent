@@ -2,7 +2,7 @@
 
 **Brief version:** 2026-07
 **Fixture checksum (sha256, observed on my machine):** `cc1927ca771c37b186a2abdb7b9757594da79ec6dda074e5a514dd2761cc8599`
-**Repository:** [FILL 5: your GitHub link]
+**Repository:** https://github.com/ibrahimsekinat08-dev/lead-triage-agent
 
 ## 1. How it works
 
